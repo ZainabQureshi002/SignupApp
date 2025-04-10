@@ -1,0 +1,126 @@
+﻿.formContainer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #c2b8a3;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box {
+    background-color: #e6e6fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 600px;
+    text-align: left;
+}
+
+
+.form-heading {
+    text-align: center;
+  color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.field-label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #5a5d9d;
+}
+.field-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f0f0f5;
+}
+
+.radioGroup,
+.radioList {
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.radioList {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    list-style: none; 
+    padding: 0;
+}
+
+    
+    
+    .checkboxGroup {
+    gap: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.tableContainer {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f3f6f9;
+}
+
+.tableRow {
+    background-color: #e0e7ff;
+}
+
+.tableData {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #4a4a4a
+}
+
+.field-description {
+    font-size: 14px;
+    color: #35e817
+}
+
+.form-button {
+    background: #28a745;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.SelectlistItem {
+    width: 180px;
+    padding: 10px; /* Now padding will apply */
+    font-size: 14px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.form-button:hover {
+    background: #218838;
+}
+
+.form-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+  
+}
+
+ .form-link:hover {
+    text-decoration: underline;
+ }

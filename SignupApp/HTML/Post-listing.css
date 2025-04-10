@@ -1,0 +1,112 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+h2, h3 {
+    color: #333;
+    font-size: 20px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+    display: block;
+    margin-top: 12px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    background: #f9f9f9;
+}
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+        outline: none;
+    }
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+input[type="file"] {
+    border: none;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    button:hover {
+        background: linear-gradient(to right, #0056b3, #003d82);
+        transform: scale(1.02);
+    }
+
+iframe {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

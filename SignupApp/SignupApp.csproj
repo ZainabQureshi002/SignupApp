@@ -67,12 +67,192 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Property.html" />
-    <Content Include="SignUp.html" />
+    <Content Include="HTML\Calculator\calculator.html" />
+    <Content Include="HTML\Inbox.css" />
+    <Content Include="HTML\Inbox.html" />
+    <Content Include="HTML\Post-listing.css" />
+    <Content Include="HTML\post-listing.html" />
+    <Content Include="HTML\propShop\Buy-Products.html" />
+    <Content Include="HTML\propShop\buyProducts.css" />
+    <Content Include="HTML\propShop\Order-History.html" />
+    <Content Include="HTML\propShop\orderHistory.css" />
+    <Content Include="HTML\propertyManagment\All-Listings.html" />
+    <Content Include="HTML\propertyManagment\allListing.css" />
+    <Content Include="HTML\propertyManagment\filter.css" />
+    <Content Include="HTML\propertyManagment\Filters.html" />
+    <Content Include="HTML\settings\Preference.css" />
+    <Content Include="HTML\settings\Preferences.html" />
+    <Content Include="HTML\settings\User-Setting.html" />
+    <Content Include="HTML\settings\userSettings.css" />
+    <Content Include="HTML\Signup.css" />
+    <Content Include="HTML\SignUp.html" />
+    <Content Include="HTML\webform\Calculator\1.png" />
+    <Content Include="HTML\webform\Calculator\calculator.aspx" />
+    <Content Include="HTML\webform\Calculator\Css\design.css" />
+    <Content Include="HTML\webform\Calculator\priceCalculator.aspx" />
+    <Content Include="HTML\webform\Calculator\WebForm1.aspx" />
+    <Content Include="HTML\webform\Css\Style.css" />
+    <Content Include="HTML\webform\Inbox.aspx" />
+    <Content Include="HTML\webform\PropertyManagment\AllListings.aspx" />
+    <Content Include="HTML\webform\PropertyManagment\PostPropertyListing.aspx" />
+    <Content Include="HTML\webform\propShop\BuyProducts.aspx" />
+    <Content Include="HTML\webform\propShop\OrderHistory.aspx" />
+    <Content Include="HTML\webform\Setting\Preference.aspx" />
+    <Content Include="HTML\webform\Setting\UserSettings.aspx" />
+    <Content Include="HTML\webform\SignUp.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm\Calculator\calculator.aspx" />
+    <Content Include="WebForm\Calculator\Css\design.css" />
+    <Content Include="WebForm\Calculator\1.png" />
+    <Content Include="WebForm\Calculator\priceCalculator.aspx" />
+    <Content Include="WebForm\Css\Style.css" />
+    <Content Include="WebForm\Inbox.aspx" />
+    <Content Include="WebForm\PropertyManagment\PostPropertyListing.aspx" />
+    <Content Include="WebForm\propShop\BuyProducts.aspx" />
+    <Content Include="WebForm\propShop\OrderHistory.aspx" />
+    <Content Include="WebForm\PropertyManagment\AllListings.aspx" />
+    <Content Include="WebForm\Setting\Preference.aspx" />
+    <Content Include="WebForm\Setting\UserSettings.aspx" />
+    <Content Include="WebForm\SignUp.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HTML\webform\Calculator\calculator.aspx.cs">
+      <DependentUpon>calculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\Calculator\calculator.aspx.designer.cs">
+      <DependentUpon>calculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\Calculator\priceCalculator.aspx.cs">
+      <DependentUpon>priceCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\Calculator\priceCalculator.aspx.designer.cs">
+      <DependentUpon>priceCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\Calculator\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\Calculator\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\Inbox.aspx.cs">
+      <DependentUpon>Inbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\Inbox.aspx.designer.cs">
+      <DependentUpon>Inbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\PropertyManagment\AllListings.aspx.cs">
+      <DependentUpon>AllListings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\PropertyManagment\AllListings.aspx.designer.cs">
+      <DependentUpon>AllListings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\PropertyManagment\PostPropertyListing.aspx.cs">
+      <DependentUpon>PostPropertyListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\PropertyManagment\PostPropertyListing.aspx.designer.cs">
+      <DependentUpon>PostPropertyListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\propShop\BuyProducts.aspx.cs">
+      <DependentUpon>BuyProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\propShop\BuyProducts.aspx.designer.cs">
+      <DependentUpon>BuyProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\propShop\OrderHistory.aspx.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\propShop\OrderHistory.aspx.designer.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\Setting\Preference.aspx.cs">
+      <DependentUpon>Preference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\Setting\Preference.aspx.designer.cs">
+      <DependentUpon>Preference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\Setting\UserSettings.aspx.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\Setting\UserSettings.aspx.designer.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\webform\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\webform\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm\Calculator\calculator.aspx.cs">
+      <DependentUpon>calculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\Calculator\calculator.aspx.designer.cs">
+      <DependentUpon>calculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\Calculator\priceCalculator.aspx.cs">
+      <DependentUpon>priceCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\Calculator\priceCalculator.aspx.designer.cs">
+      <DependentUpon>priceCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\Inbox.aspx.cs">
+      <DependentUpon>Inbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\Inbox.aspx.designer.cs">
+      <DependentUpon>Inbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PropertyManagment\PostPropertyListing.aspx.cs">
+      <DependentUpon>PostPropertyListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PropertyManagment\PostPropertyListing.aspx.designer.cs">
+      <DependentUpon>PostPropertyListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\propShop\BuyProducts.aspx.cs">
+      <DependentUpon>BuyProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\propShop\BuyProducts.aspx.designer.cs">
+      <DependentUpon>BuyProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\propShop\OrderHistory.aspx.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\propShop\OrderHistory.aspx.designer.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PropertyManagment\AllListings.aspx.cs">
+      <DependentUpon>AllListings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PropertyManagment\AllListings.aspx.designer.cs">
+      <DependentUpon>AllListings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\Setting\Preference.aspx.cs">
+      <DependentUpon>Preference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\Setting\Preference.aspx.designer.cs">
+      <DependentUpon>Preference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\Setting\UserSettings.aspx.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\Setting\UserSettings.aspx.designer.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -82,6 +262,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

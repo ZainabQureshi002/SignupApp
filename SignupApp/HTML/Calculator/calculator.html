@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link href="../../WebForm/Calculator/CSS/design.css" rel="stylesheet" />
+    <script>
+        let current = "";
+        let previous = "";
+        let operator = "";
+        let previousButton = null;
+
+        function appendToDisplay(inputValue, btnElement) {
+            let currentDisplay = document.getElementById("current-input");
+
+            if (currentDisplay.innerText === "0") {
+                current = inputValue;
+            } else {
+                current += inputValue;
+            }
+
+            currentDisplay.innerText = current;
+            changeColor(btnElement);
+        }
+
+        function appendOperator(operatorSymbol, btnElement) {
+            if (current === "") return; 
+
+            operator = operatorSymbol;
+            previous = current;
+            current = ""; 
+
+            document.getElementById("previous-input").innerText = previous + " " + operator;
+            document.getElementById("current-input").innerText = "0";
+            changeColor(btnElement);
+        }
+
+        function appendDecimal(btnElement) {
+            if (!current.includes(".")) {
+                current += ".";
+                document.getElementById("current-input").innerText = current;
+            }
+            changeColor(btnElement);
+        }
+
+        function deleteLast(btnElement) {
+            if (current.length > 1) {
+                current = current.slice(0, -1);
+            } else {
+                current = "0";
+            }
+
+            document.getElementById("current-input").innerText = current;
+            changeColor(btnElement);
+        }
+
+        function clearDisplay(btnElement) {
+            current = "";
+            previous = "";
+            operator = "";
+
+            document.getElementById("previous-input").innerText = "";
+            document.getElementById("current-input").innerText = "0";
+            changeColor(btnElement);
+        }
+
+        function calculateResult(btnElement) {
+            if (previous === "" || current === "" || operator === "") return;
+
+            let result;
+            let num1 = parseFloat(previous);
+            let num2 = parseFloat(current);
+
+            switch (operator) {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    result = num2 !== 0 ? num1 / num2 : "Error"; 
+                    break;
+                case "%":
+                    result = num1 % num2;
+                    break;
+                default:
+                    result = "Error";
+            }
+
+            current = "";
+            previous = "";
+            operator = "";
+
+            document.getElementById("previous-input").innerText = "";
+            document.getElementById("current-input").innerText = result.toString();
+            changeColor(btnElement);
+        }
+
+        function calculateSquareRoot(btnElement) {
+            let numValue = parseFloat(current);
+            if (numValue >= 0) {
+                current = Math.sqrt(numValue).toString();
+            } else {
+                current = "Error";
+            }
+
+            document.getElementById("current-input").innerText = current;
+            changeColor(btnElement);
+        }
+
+        function changeColor(btnElement) {
+            if (previousButton) {
+                previousButton.style.backgroundColor = "";
+            }
+            btnElement.style.backgroundColor = "red";
+            previousButton = btnElement;
+        }
+
+    </script>
+</head>
+<body class="calBody">
+    <div id="calculator" class="calculator">
+        <div id="displayContainer" class="display-container">
+            <div class="previous-input" id="previous-input"></div>
+            <div class="current-input" id="current-input">0</div>
+        </div>
+
+        <div id="Row1">
+            <button id="btnClear" class="btn" onclick="clearDisplay(this);">CE</button>
+            <button id="btnDelete" class="btn" onclick="deleteLast(this);">C</button>
+            <button id="btnModulus" class="operation" onclick="appendOperator('%', this);">%</button>
+            <button id="btnDivide" class="operation" onclick="appendOperator('/', this);">/</button>
+        </div>
+
+        <div id="Row2">
+            <button id="btn7" class="btn" onclick="appendToDisplay('7', this);">7</button>
+            <button id="btn8" class="btn" onclick="appendToDisplay('8', this);">8</button>
+            <button id="btn9" class="btn" onclick="appendToDisplay('9', this);">9</button>
+            <button id="btnMultiply" class="operation" onclick="appendOperator('*', this);">*</button>
+        </div>
+
+        <div id="Row3">
+            <button id="btn4" class="btn" onclick="appendToDisplay('4', this);">4</button>
+            <button id="btn5" class="btn" onclick="appendToDisplay('5', this);">5</button>
+            <button id="btn6" class="btn" onclick="appendToDisplay('6', this);">6</button>
+            <button id="btnMinus" class="operation" onclick="appendOperator('-', this);">-</button>
+        </div>
+
+        <div id="Row4">
+            <button id="btn1" class="btn" onclick="appendToDisplay('1', this);">1</button>
+            <button id="btn2" class="btn" onclick="appendToDisplay('2', this);">2</button>
+            <button id="btn3" class="btn" onclick="appendToDisplay('3', this);">3</button>
+            <button id="btnPlus" class="operation" onclick="appendOperator('+', this);">+</button>
+        </div>
+
+        <div id="Row5">
+            <button id="btn0" class="btn" onclick="appendToDisplay('0', this);">0</button>
+            <button id="btnDecimal" class="btn" onclick="appendDecimal(this);">.</button>
+            <button id="btnSqrt" class="operation" onclick="calculateSquareRoot(this);">√</button>
+            <button id="btnEqual" class="btn" onclick="calculateResult(this);">=</button>
+        </div>
+
+    </div>
+</body>
+</html>

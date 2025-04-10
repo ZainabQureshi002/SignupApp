@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="Post-listing.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <h2>Post Property Listing</h2>
+
+    <form>
+
+        <h2>Select Purpose</h2>
+        <input type="radio" name="purpose" id="sell" required />
+        <label for="sell">Sell</label>
+        <input type="radio" name="purpose" id="rent" required />
+        <label for="rent">Rent</label>
+        <br /><br />
+
+        <h2>Select Property Type</h2>
+        <input type="radio" id="house" name="PropertyType" value="house" />
+        <label for="house">House</label>
+
+        <input type="radio" id="flat" name="PropertyType" value="flat" />
+        <label for="flat">Flat</label>
+
+        <input type="radio" id="upper-portion" name="PropertyType" value="upper-portion" />
+        <label for="upper-portion">Upper Portion</label>
+
+        <input type="radio" id="lower-portion" name="PropertyType" value="lower-portion" />
+        <label for="lower-portion">Lower Portion</label>
+
+        <input type="radio" id="farm-house" name="PropertyType" value="farm-house" />
+        <label for="farm-house">Farm House</label>
+
+        <input type="radio" id="room" name="PropertyType" value="room" />
+        <label for="room">Room</label>
+
+        <input type="radio" id="penthouse" name="PropertyType" value="penthouse" />
+        <label for="penthouse">Penthouse</label>
+
+        <h2>City & Location</h2>
+        <label for="city">City:</label><br />
+        <select id="city" name="city" required>
+            <option value="">Select City</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+        </select>
+        <br /><br />
+
+        <label for="location">Search Location:</label><br />
+        <input type="text" id="location" name="location" placeholder="Enter location" required>
+        <br><br>
+
+        <h3>Pin Location on Google Map</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799141503!2d-74.25987588788276!3d40.697670068516156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzI4LjYiTiA3NMKwMTUnMzcuMiJX!5e0!3m2!1sen!2sus!4v1616615294388!5m2!1sen!2sus" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br><br>
+
+        <h2>Price and Area</h2>
+
+        <label for="price">Price:</label><br />
+        <input type="number" name="price" id="price" required />
+        <br /><br />
+
+        <label for="areaSize">Area Size:</label><br />
+        <input type="Number" name="areaSize" id="areaSize" required />
+        <br /><br />
+
+        <input type="checkbox" name="possession" id="possession" />
+        <label for="possession">Ready for Possession</label>
+        <br /><br />
+        <h2>Ad Information</h2>
+        <label for="title">Title:</label><br />
+        <input type="text" id="title" name="title" required>
+        <br><br>
+
+        <label for="description">Description:</label><br />
+        <textarea id="description" name="description" required></textarea>
+        <br><br>
+        <h2>Property Images and Videos</h2>
+        <label for="images">Upload Images:</label><br />
+        <input type="file" id="images" name="images" accept="image/jpeg, image/png" multiple required>
+        <br><br>
+        <label for="video">Add a YouTube video link:</label><br />
+        <input type="url" id="video" name="video" placeholder="Paste YouTube link here">
+        <br>
+        <iframe width="300" height="200" src="https://www.youtube.com/shorts/xO4TdZ4Fc0Y" frameborder="0" allowfullscreen></iframe>
+        <br><br>
+        <h2>Features & Amenities</h2>
+        <label for="bedrooms">Bedrooms:</label>
+        <select id="bedrooms" name="bedrooms">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br><br>
+        <label for="bathrooms">Bathrooms:</label>
+        <select id="bathrooms" name="bathrooms">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br><br>
+        <h2>Contact Information</h2>
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" id="email" required />
+        <br /><br />
+        <label for="mobile">Mobile Number:</label><br />
+        <input type="tel" name="mobile" id="mobile" pattern="\d{11}" placeholder="Enter  number" required />
+        <br /><br />
+        <label for="landline">Landline Number:</label><br />
+        <input type="tel" id="landline" name="landline">
+        <br><br>
+
+        <button type="submit">Post Listing</button>
+    </form>
+
+
+</body>
+</html>

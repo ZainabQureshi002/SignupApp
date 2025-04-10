@@ -1,0 +1,102 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: #fff;
+    padding: 25px;
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+    input:focus, select:focus {
+        border-color: #74ebd5;
+        box-shadow: 0px 0px 8px rgba(116, 235, 213, 0.5);
+        outline: none;
+    }
+
+    input[type="file"] {
+        padding: 5px;
+        border: none;
+    }
+
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+    }
+
+button {
+    width: 100%;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+    button:hover {
+        background: linear-gradient(to right, #67d7c5, #99a9e0);
+        transform: scale(1.02);
+    }
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

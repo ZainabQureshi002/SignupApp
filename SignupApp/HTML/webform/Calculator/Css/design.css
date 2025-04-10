@@ -1,0 +1,65 @@
+﻿.calBody {
+    font-family: Arial,sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: #d6e4f0;
+   
+}
+
+.calculator {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+.display-container {
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.previous-input {
+    font-size: 1em;
+    color: #aaa;
+}
+.current-input {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.btn {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+}
+
+.operation {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    background: #f39c12;
+    color: white;
+}
+
+#btnEqual {
+    background: #3498db;
+    color: white;
+}
+
+#btnClear {
+    background: #e74c3c;
+}
+

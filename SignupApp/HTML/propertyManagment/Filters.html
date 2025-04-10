@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="filter.css" rel="stylesheet" />
+    <title>Filters</title>
+</head>
+<body>
+    <form>
+        <h2>Filters</h2>
+        <p>Apply filters to organize data accordingly</p>
+
+        <label for="category">Category:</label><br />
+        <select id="category" name="category" required>
+            <option value="">Select Category</option>
+            <option value="House">House</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Plot">Plot</option>
+        </select>
+        <br><br>
+
+        <label for="city">City:</label><br />
+        <select id="city" name="city" required>
+            <option value="">Select City</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+        </select>
+        <br><br>
+
+        <label for="location">Location:</label><br />
+        <select id="location" name="location" required>
+            <option value="">Select Location</option>
+            <option value="DHA">DHA</option>
+            <option value="Bahria Town">Bahria Town</option>
+            <option value="Gulberg">Gulberg</option>
+            <option value="F-10">F-10</option>
+        </select>
+        <br><br>
+
+        <label for="priceFrom">Price Range:</label><br />
+        <input type="number" id="priceFrom" name="priceFrom" placeholder="From" required>
+        <input type="number" id="priceTo" name="priceTo" placeholder="To" required>
+        <button type="reset">Reset</button>
+
+        <br><br>
+
+        <label for="areaFrom">Area Range:</label><br />
+        <input type="number" id="areaFrom" name="areaFrom" placeholder="From" required>
+
+        <input type="number" id="areaTo" name="areaTo" placeholder="To" required>
+        <select id="areaUnit" name="areaUnit" required>
+            <option value="SqM">Sq. M.</option>
+            <option value="Marla">Marla</option>
+            <option value="Kanal">Kanal</option>
+        </select>
+        <button type="reset">Reset</button>
+        <br><br>
+
+        <button type="submit">Apply Filters</button>
+        </form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="buyProducts.css" rel="stylesheet" />
+    <title>Ad Listing & Credits</title>
+</head>
+<body>
+
+    <h2>Choose Your Listing Package</h2>
+
+    <form action="#" method="POST">
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Select</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Listing</td>
+                <td>Get an ad slot for 30 days to post your listing</td>
+                <td>Rs. 3000</td>
+                <td><input type="radio" name="listing" value="listing"></td>
+                <td><button type="button">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Hot Listing</td>
+                <td>Get an ad slot for 30 days and place your ad above normal listings</td>
+                <td>Rs. 7800</td>
+                <td><input type="radio" name="listing" value="hot_listing"></td>
+                <td><button type="button">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Super Hot Listing</td>
+                <td>Get an ad slot for 30 days and place your ad at the top of search results</td>
+                <td>Rs. 21000</td>
+                <td><input type="radio" name="listing" value="super_hot_listing"></td>
+                <td><button type="button">Add to Cart</button></td>
+            </tr>
+        </table>
+
+        <h2>Purchase Credits</h2>
+
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Select</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Refresh Credits</td>
+                <td>Refresh the time of your posted listings and bring them to the top again</td>
+                <td>Rs. 240</td>
+                <td><input type="checkbox" name="credits[]" value="refresh_credits"></td>
+                <td><button type="button">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Story Ad Credits</td>
+                <td>Get more exposure by posting your listing in the story</td>
+                <td>Rs. 1000</td>
+                <td><input type="checkbox" name="credits[]" value="story_ad"></td>
+                <td><button type="button">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Verified Photography Credits</td>
+                <td>Upgrade your property's visual appeal with our professional photoshoot service (Only in Karachi, Lahore & Islamabad)</td>
+                <td>Rs. 3600</td>
+                <td><input type="checkbox" name="credits[]" value="verified_photography"></td>
+                <td><button type="button">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Verified Videography Credits</td>
+                <td>Bring your property to life with our videography service (Only in Karachi, Lahore & Islamabad)</td>
+                <td>Rs. 12000</td>
+                <td><input type="checkbox" name="credits[]" value="verified_videography"></td>
+                <td><button type="button">Add to Cart</button></td>
+            </tr>
+        </table>
+
+        <br>
+        <button type="submit">Proceed to Checkout</button>
+    </form>
+
+    <p>No Items Added in Cart</p>
+    
+
+</body>
+</html>

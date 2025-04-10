@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="Preference.css" rel="stylesheet" />
+    <title>Notification Settings</title>
+</head>
+<body>
+    <form >
+        <h2>Notification Settings</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <td>Email Notification</td>
+                <td>Allow to recieve email notifications</td>
+                <td><input type="Checkbox"  /> </td>
+            </tr>
+            <tr>
+                <td>Newsletters</td>
+                <td>Allow to stay updated and receive newsletter</td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <td>Automated Reports</td>
+                <td>Allow to send us reports automatically in case of any issue</td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <td>Currency</td>
+                <td>
+                    <select required>
+                        <option>Select Currency</option>
+                        <option>PKR</option>
+                        <option>USD</option>
+                        <option>EUR</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Area Unit</td>
+                <td>
+                    <select id="area unit"   required>
+                        <option>Select Area Unit</option>
+                        <option value="square feet">Square Feet</option>
+                        <option value="square meters">Square Meters</option>
+                        <option value="marla">Marla</option>
+                        <option value="kanals">Kanals</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+        </table>
+        <button type="submit">Save Changes</button><br />
+    </form>
+</body>
+</html>

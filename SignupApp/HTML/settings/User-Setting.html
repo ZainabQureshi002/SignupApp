@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="#" rel="stylesheet" /> 
+    <link rel="stylesheet" href="userSettings.css">
+    <title>Settings</title>
+</head>
+<body>
+
+    <h2>Settings</h2>
+    <h2>Additional Information</h2>
+
+    <form>
+        <!-- Fixed Form Tag -->
+
+        <label for="username">Full Name:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your full name" required /><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required /><br><br>
+
+        <label for="mobile">Mobile Number:</label><br />
+        <input type="tel" id="mobile" name="mobile" pattern="\d{11}" placeholder="Enter Mobile number" required /><br /><br />
+
+        <label for="landline">Landline Number:</label><br>
+        <input type="tel" id="landline" name="landline" placeholder="Enter Landline number" /><br><br>
+
+        <label for="whatsapp">WhatsApp Number:</label><br />
+        <input type="tel" id="whatsapp" name="whatsapp" pattern="\d{11}" placeholder="Enter WhatsApp number" required /><br /><br />
+
+        <label for="city">City:</label><br />
+        <select id="city" name="city" required>
+            <option value="">Select City</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Abbottabad">Abbottabad</option>
+            <option value="Multan">Multan</option>
+            <option value="Haripure">Haripure</option>
+            <option value="Peshawar">Peshawar</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+        </select><br /><br />
+
+        <label for="address">Address:</label><br />
+        <input type="text" id="address" name="address" placeholder="Enter the Address" required /><br /><br />
+
+        <label for="picture">Upload a Picture:</label><br />
+        <input type="file" id="picture" name="picture" required /><br /><br />
+
+        <input type="checkbox" id="update" name="update" />
+        <label for="update">Update details in all property listings</label><br /><br />
+
+        <button type="submit">Save Changes</button><br /><br>
+
+        <b><a href="Preferences.html">Preferences</a></b><br />
+        <b><a href="Change Password.html">Change Password</a></b><br />
+
+    </form>
+
+</body>
+</html>
